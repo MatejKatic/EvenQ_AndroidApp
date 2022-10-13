@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/messagePadding">
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/messageTvMargin"
+        android:layout_marginTop="@dimen/messageTvMargin"
+        android:layout_marginEnd="@dimen/messageTvMargin"
+        android:background="@drawable/background_message_sent"
+        android:padding="@dimen/messageTvPadding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/messageTvTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent="0.85"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/msgDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/messageTvMargin"
+        android:textColor="@color/surface_surface_2"
+        android:textSize="@dimen/messageDateTextSize"
+        app:layout_constraintEnd_toEndOf="@id/textMessage"
+        app:layout_constraintTop_toBottomOf="@id/textMessage"
+        tools:text="@tools:sample/lorem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

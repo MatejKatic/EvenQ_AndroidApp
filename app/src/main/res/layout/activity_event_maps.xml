@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/evenqDark"
+    android:theme="@style/EventActivityTheme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/eventActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:theme="@style/HeadlineSmallNLv1Left"
+            app:layout_constraintTop_toBottomOf="@id/ivEventImage"
+            tools:text="30 June 2022" />
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:theme="@style/HeadlineLargeNLv1Left"
+            app:layout_constraintTop_toBottomOf="@id/tvEventDate"
+            tools:text="Super ultra cool event" />
+
+        <TextView
+            android:id="@+id/tvEventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="#939393"
+            android:theme="@style/HeadlineSmallNLv1Left"
+            app:layout_constraintTop_toBottomOf="@id/tvEventName"
+            tools:text="Ulica 29, Zagreb, Croatia" />
+
+        <TextView
+            android:id="@+id/tvEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:theme="@style/BodyLargeNLv1Left"
+            app:layout_constraintTop_toBottomOf="@id/tvEventLocation"
+            tools:text="Tomorrowland is the world's largest dance music festival, each summer bringing electronic music's biggest stars to its magical wonderland in the Belgium town of Boom. After having to take two years off, Tomorrowland returns in July 2022 with another outstanding lineup that spans across EDM, house, techno, hardstyle, drum and bass, trance and more, all showcased over tens of stages, many curated by some of each genre's foremost brands and artists." />
+
+        <ImageView
+            android:id="@+id/iconTicket"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_ticket_new"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEventDescription"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTicketPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/ticket_price_text"
+            android:textColor="@color/white"
+            android:theme="@style/HeadlineSmallNLv1Left"
+            app:layout_constraintStart_toEndOf="@id/iconTicket"
+            app:layout_constraintTop_toBottomOf="@id/tvEventDescription" />
+
+        <TextView
+            android:id="@+id/tvTicketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:theme="@style/HeadlineSmallNLv1Left"
+            app:layout_constraintStart_toEndOf="@id/tvTicketPriceLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvEventDescription"
+            tools:text="32.99€" />
+
+        <ImageView
+            android:id="@+id/iconVenue"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconTicket"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvVenueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/venue"
+            android:textColor="@color/white"
+            android:theme="@style/HeadlineSmallNLv1Left"
+            app:layout_constraintStart_toEndOf="@id/iconTicket"
+            app:layout_constraintTop_toBottomOf="@id/tvTicketPriceLabel" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mapContainer"
+            android:layout_width="match_parent"
+            android:layout_height="376dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/evenqLight"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconVenue">
+
+
+            <TextView
+                android:id="@+id/tvCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:theme="@style/BodyMediumNLv1Left"
+                tools:text="Los Angeles" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="328dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="16dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".EventMapsActivity" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_button"
+            android:text="@string/chat"
+            android:textColor="@color/goldTint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mapContainer" />
+
+        <Button
+            android:id="@+id/btnScanTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_button"
+            android:text="@string/scan_tickets"
+            android:textColor="@color/goldTint"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnChat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

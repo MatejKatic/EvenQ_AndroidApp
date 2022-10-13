@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "298534682242",
+    "firebase_url": "https://evenq-81eef-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "evenq-81eef",
+    "storage_bucket": "evenq-81eef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298534682242:android:d5c1c25b7b7aa97d153e9b",
+        "android_client_info": {
+          "package_name": "hr.algebra.evenq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298534682242-ofcu72s6dspbllf71npflp74g7kot1lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-iD9rlVsAQfOZKsmDBVPBlpEFpGrBa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298534682242-ofcu72s6dspbllf71npflp74g7kot1lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

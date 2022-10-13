@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loginPadding">24dp</dimen>
+    <dimen name="ivLogoHeight">200dp</dimen>
+    <dimen name="ivLogoMarginTop">25dp</dimen>
+    <dimen name="tvMarginVert">16dp</dimen>
+    <dimen name="tilMarginTop">12dp</dimen>
+    <dimen name="cvMargin">16dp</dimen>
+    <dimen name="cvCornerRadius">12dp</dimen>
+    <dimen name="cvElevation">8dp</dimen>
+    <dimen name="tvAboutCard">20sp</dimen>
+    <dimen name="signInWidth">150dp</dimen>
+    <dimen name="chatBoxRadius">24dp</dimen>
+    <dimen name="chatInfoHeight">60dp</dimen>
+    <dimen name="tvSize">20sp</dimen>
+    <dimen name="ivLogoutWidth">60dp</dimen>
+    <dimen name="ivLogoutMargin">6dp</dimen>
+    <dimen name="rvChatPadding">16dp</dimen>
+    <dimen name="chatFooterPadding">5dp</dimen>
+    <dimen name="messageBoxHeight">40dp</dimen>
+    <dimen name="messageBoxMarginBottom">12dp</dimen>
+    <dimen name="messageBoxPaddingStart">16dp</dimen>
+    <dimen name="messageBoxPaddingEnd">12dp</dimen>
+    <dimen name="sendBtnWidth">40dp</dimen>
+    <dimen name="sendBtnMarginBottom">4dp</dimen>
+    <dimen name="messagePadding">4dp</dimen>
+    <dimen name="messageProfileImgWidth">30dp</dimen>
+    <dimen name="messageTvMargin">4dp</dimen>
+    <dimen name="messageTvPadding">12dp</dimen>
+    <dimen name="messageTvTextSize">15sp</dimen>
+    <dimen name="messageDateTextSize">11sp</dimen>
+    <dimen name="itemManagmentHeight">50dp</dimen>
+    <dimen name="ivFilterPadding">5dp</dimen>
+</resources>
